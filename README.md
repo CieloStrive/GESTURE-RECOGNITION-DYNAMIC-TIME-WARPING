@@ -62,6 +62,7 @@ Cost = \frac{\sum_{}^{}d[i][j] }{N}
 \[
 d[i][j] = (1-scale * \frac{Acc_i*Acc_j}{\|Acc_i\|*\|Acc_j\| + 1*10^{-6}} ) * Norm
 \] -->
+
 ![](e:/Git_repos/GESTURE-RECOGNITION-EMBEDDED-PROJECT/undefined/images/2020-06-20-22-51-59.png)
 
 Cost is a mean value of d[i][j]. d[i][j] is the difference(norm) between two acceleration vectors of optimal match times a designed regularized compound coefficient. 

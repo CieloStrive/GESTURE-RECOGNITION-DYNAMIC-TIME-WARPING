@@ -1,7 +1,3 @@
-*To Use SAMD21 XPLAINED PRO with Arduino, refer to [Github][1].*
-
-[1]: https://github.com/AtmelUniversityFrance/atmel-samd21-xpro-boardmanagermodule/wiki/GettingStarted:-SAMD21-Xplained-Pro
-
 #EL 6483 RTES Project
 
 ##Index
@@ -37,6 +33,10 @@ Use the data collected from a single accelerometer to record a hand movement seq
 
 (c) Extra: jumper wire, bread board
 
+*To Use SAMD21 XPLAINED PRO with Arduino, refer to [Github][1].*
+
+[1]: https://github.com/AtmelUniversityFrance/atmel-samd21-xpro-boardmanagermodule/wiki/GettingStarted:-SAMD21-Xplained-Pro
+
 ---
 
 ## Algorithm
@@ -56,12 +56,13 @@ After calculating optimal match between two acceleration sequences, I used diffe
 
 After finding optimal match(detailed implementation won’t be shown here  , the cost function is computed by:
 
-\[
+<!-- \[
 Cost = \frac{\sum_{}^{}d[i][j] }{N}
 \]
 \[
 d[i][j] = (1-scale * \frac{Acc_i*Acc_j}{\|Acc_i\|*\|Acc_j\| + 1*10^{-6}} ) * Norm
-\]
+\] -->
+![](e:/Git_repos/GESTURE-RECOGNITION-EMBEDDED-PROJECT/undefined/images/2020-06-20-22-51-59.png)
 
 Cost is a mean value of d[i][j]. d[i][j] is the difference(norm) between two acceleration vectors of optimal match times a designed regularized compound coefficient. 
 

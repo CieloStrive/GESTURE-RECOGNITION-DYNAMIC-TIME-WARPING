@@ -23,7 +23,7 @@ Use the data collected from a single accelerometer to record a hand movement seq
 ---
 
 ## Hardware
-![](e:/Git_repos/GESTURE-RECOGNITION-EMBEDDED-PROJECT/undefined/images/2020-06-20-22-37-01.png)
+![](e:/Git_repos/GESTURE-RECOGNITION-EMBEDDED-PROJECT/undefined/images/2020-06-21-14-24-40.png)
 
 *Figure 1: Hardware*
 
@@ -44,7 +44,7 @@ Use the data collected from a single accelerometer to record a hand movement seq
 ### Dynamic Time Warping:
 For the project, I used Dynamic Time Warping algorithm. In general, DTW is a method that calculates an optimal match between two given sequences (e.g. time series), shown in figure below.
 
-![](e:/Git_repos/GESTURE-RECOGNITION-EMBEDDED-PROJECT/undefined/images/2020-06-20-22-37-58.png)
+![](e:/Git_repos/GESTURE-RECOGNITION-EMBEDDED-PROJECT/undefined/images/2020-06-21-14-25-21.png)
 
 *Figure 2: Dynamic Time Warping*
 
@@ -63,7 +63,7 @@ Cost = \frac{\sum_{}^{}d[i][j] }{N}
 d[i][j] = (1-scale * \frac{Acc_i*Acc_j}{\|Acc_i\|*\|Acc_j\| + 1*10^{-6}} ) * Norm
 \] -->
 
-![](e:/Git_repos/GESTURE-RECOGNITION-EMBEDDED-PROJECT/undefined/images/2020-06-20-22-51-59.png)
+![](e:/Git_repos/GESTURE-RECOGNITION-EMBEDDED-PROJECT/undefined/images/2020-06-21-14-26-49.png)
 
 Cost is a mean value of d[i][j]. d[i][j] is the difference(norm) between two acceleration vectors of optimal match times a designed regularized compound coefficient. 
 
